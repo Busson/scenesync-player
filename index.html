@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/scenesync.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/scenesync.js"></script>
+    </head>
+    <body onload='InitializeSceneSync("index.ss");'>
+        <canvas id="myCanvas"> </canvas>
+        <div class="controls">
+            <div class="scenesync-time-container">
+                <div id="progressBar" class="bar" style="width:25%"></div>
+            </div>
+            <i class="fa fa-play fa-lg" onclick="PlayPause();" aria-hidden="true"></i>
+            <time> 30:00/ &infin;</time>
+            <i class="fa fa-expand fa-lg right" aria-hidden="true"></i>
+             <div class="scenesync-sound-container" style="width: 100px;display: inline-block;float: right;">
+                <div id="volumeBar" class="bar" style="width:25%"></div>
+            </div>
+            <i class="fa fa-volume-up fa-lg right" aria-hidden="true"></i>
+        </div>    
+    </body>
+</html>
